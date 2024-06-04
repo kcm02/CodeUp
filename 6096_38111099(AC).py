@@ -1,7 +1,4 @@
-﻿pan = [[0 for j in range(19)] for i in range(19)]
-
-for i in range(19):
-    pan[i] = list(map(int,input().split()))
+pan = [[int(x) for x in input().split()] for _ in range(19)]
 
 n = int(input())
 
