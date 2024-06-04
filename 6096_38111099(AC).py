@@ -8,7 +8,5 @@ for _ in range(n):
         pan[x-1][i] = int(not bool(pan[x-1][i]))
         pan[i][y-1] = int(not bool(pan[i][y-1]))
 
-for i in range(19):
-    for j in range(19):
-        print(pan[i][j], end=' ')
-    print()
+for row in pan:
+    print(' '.join(map(str,row)))
